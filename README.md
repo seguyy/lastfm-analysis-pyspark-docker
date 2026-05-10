@@ -16,11 +16,9 @@ The project was implemented using PySpark and containerized with Docker to provi
 
 ## Dataset
 
-Dataset source:
+Dataset source: [Last.fm 1K Dataset](http://ocelma.net/MusicRecommendationDataset/lastfm-1K.html)
 
-```text
-http://ocelma.net/MusicRecommendationDataset/lastfm-1K.html
-```
+Dataset attribution: This dataset requires referencing the official Last.fm webpage: [Last.fm](https://www.last.fm/)
 
 Main file used:
 
@@ -50,7 +48,7 @@ lastfm/userid-timestamp-artid-artname-traid-traname.tsv
 ## Project Structure
 
 ```text
-TASK2/
+lastfm-session-analysis-pyspark/
 ├── README.md
 ├── Dockerfile
 ├── docker-compose.yml
@@ -64,6 +62,7 @@ TASK2/
 ```
 
 Note: lastfm/ and lastfm_split/ are local-only folders and are not committed to the repository.
+
 ---
 
 ## Architecture
