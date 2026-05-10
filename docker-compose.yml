@@ -1,0 +1,14 @@
+services:
+  lastfm-spark:
+    build: .
+    container_name: lastfm-spark
+    volumes:
+      - ./src:/opt/spark-apps
+      - ./lastfm_split:/opt/spark-data
+      - ./output:/opt/spark-output
+    mem_limit: 5g
+    cpus: 1
+    command: >
+      /opt/spark/bin/spark-submit
+      --driver-memory 3g
+      /opt/spark-apps/main_rdd.py

@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Raw data and split data
+lastfm/
+lastfm_split/
+data/
+*.zip
+
+# Ignore TSV files by default, but final result
+*.tsv
+!output/top_10_songs.tsv
